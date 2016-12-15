@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_toppings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.pizzaord.Toppings">
+    <ImageView
+        android:src="@drawable/t2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Toppings"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#38002d"
+                android:textSize="48dp"
+                android:fontFamily="sans-serif-light"
+                android:padding="10dp"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Main Topping"
+                android:textSize="24dp"
+                android:textColor="#FF000738"
+                android:paddingLeft="24dp"/>
+
+
+            <RadioGroup
+                android:paddingLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+
+
+                <RadioButton
+                    android:text="Vegetarian"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mtveg"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginLeft="20sp"
+                    android:buttonTint="@color/veg_color"
+                    android:checked="true"
+                    />
+
+                <RadioButton
+                    android:text="NON-Vegetarian"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mtnonveg"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginLeft="20sp"
+                    android:buttonTint="@color/nonv_color"
+
+
+                    />
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cheese"
+                android:textSize="24dp"
+                android:textColor="#FF000738"
+                android:paddingLeft="24dp"
+                android:layout_marginTop="5dp"
+
+                />
+            <RadioGroup
+                android:paddingLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+
+
+                <RadioButton
+                    android:text="single-layer"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/single_cheese"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginLeft="10sp"
+                    android:buttonTint="@color/cheese_color"
+                    android:checked="true"
+                    />
+
+                <RadioButton
+                    android:text="double-layer"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/double_cheese"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginLeft="10sp"
+                    android:buttonTint="@color/cheese_color"
+
+
+                    />
+                <RadioButton
+                    android:text="triple-layer"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/triple_cheese"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginLeft="10sp"
+                    android:buttonTint="@color/cheese_color"
+
+
+                    />
+
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD-ONs"
+                android:textSize="48dp"
+                android:textAlignment="center"
+                android:textColor="#38002d"
+                android:fontFamily="sans-serif-light"
+                />
+
+            <CheckBox
+                android:text="Green  Olives"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/golives"
+                android:layout_marginLeft="20dp"/>
+            <CheckBox
+                android:text="Black Olives"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bolives"
+                android:layout_marginLeft="20dp"/>
+
+            <CheckBox
+                android:text="Extra Cheese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/extracheese"
+                android:layout_marginLeft="20dp"/>
+
+            <CheckBox
+                android:text="Extra Veggie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/extravegggie"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*note - 30₹ per ADD-Ons"
+                android:id="@+id/textView4"
+                android:textAlignment="center"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="Next"
+                android:background="#d60808"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:onClick="getdatasize"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
